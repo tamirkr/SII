@@ -1,0 +1,107 @@
+<div class="modal fade" id="editModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                Edit
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <form name="form" class="form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Operator</label>
+                            <div class="col-sm-3">
+                                <input name="operator" class="form-control" type="text" ng-model="$ctrl.tripToEdit.operator"
+                                       required/>
+                                <div ng-messages="form.operator.$error" ng-if="form.operator.$dirty">
+                                    <div ng-message="required">This field is required</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Branch</label>
+                            <div class="col-sm-3">
+                                <input name="branch" class="form-control" type="text" ng-model="$ctrl.tripToEdit.branch"
+                                       required/>
+                                <div ng-messages="form.branch.$error" ng-if="form.branch.$dirty">
+                                    <div ng-message="required">This field is required</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Line Number</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="lineNumber" ng-model="$ctrl.tripToEdit.lineNumber" required/>
+                                <div ng-messages="form.lineNumber.$error" ng-if="form.lineNumber.$dirty">
+                                    <div ng-message="required">This field is required</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Entry Point</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="entryPoint" ng-model="$ctrl.tripToEdit.entryPoint" required/>
+                                <div ng-messages="form.entryPoint.$error" ng-if="form.entryPoint.$dirty">
+                                    <div ng-message="required">This field is required</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">End Point</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="endPoint" ng-model="$ctrl.tripToEdit.endPoint" required/>
+                                <div ng-messages="form.endPoint.$error" ng-if="form.endPoint.$dirty">
+                                    <div ng-message="required">This field is required</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">From Date</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="fromDate" ng-model="$ctrl.tripToEdit.fromDate" required/>
+                                <div ng-messages="form.fromDate.$error" ng-if="form.fromDate.$dirty">
+                                    <div ng-message="required">This field is required</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">To Date</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="toDate" ng-model="$ctrl.tripToEdit.toDate" required/>
+                                <div ng-messages="form.toDate.$error" ng-if="form.toDate.$dirty">
+                                    <div ng-message="required">This field is required</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Date Code</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="dateCode" ng-model="$ctrl.tripToEdit.dateCode" required/>
+                                <div ng-messages="form.dateCode.$error" ng-if="form.dateCode.$dirty">
+                                    <div ng-message="required">This field is required</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Catalog Line Number</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="catalogLineNumber" ng-model="$ctrl.tripToEdit.catalogLineNumber" required/>
+                                <div ng-messages="form.catalogLineNumber.$error" ng-if="form.catalogLineNumber.$dirty">
+                                    <div ng-message="required">This field is required</div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" type="button" data-dismiss="modal" ng-click="$ctrl.save()"
+                        ng-disabled="form.$pristine ? false : form.$invalid">Save
+                </button>
+                <button class="btn btn-warning" type="button" data-dismiss="modal"
+                        >Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

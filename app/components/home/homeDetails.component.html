@@ -1,0 +1,45 @@
+<grid></grid>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <table class="table table-responsive table-striped table-bordered">
+                <thead>
+                <tr>
+                    <th>Operator</th>
+                    <th>Branch</th>
+                    <th>Line Number</th>
+                    <th>Entry Point</th>
+                    <th>End Point</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Code</th>
+                    <th>Line Number</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>{{$ctrl.data.operator}}</td>
+                    <td>{{$ctrl.data.branch}}</td>
+                    <td>{{$ctrl.data.lineNumber}}</td>
+                    <td>{{$ctrl.data.entryPoint}}</td>
+                    <td>{{$ctrl.data.endPoint}}</td>
+                    <td>{{$ctrl.data.fromDate}}</td>
+                    <td>{{$ctrl.data.toDate}}</td>
+                    <td>{{$ctrl.data.dateCode}}</td>
+                    <td>{{$ctrl.data.catalogLineNumber}}</td>
+                    <td>
+                        <button class="btn btn-info btn-sm"
+                                data-toggle="modal"
+                                data-target="#editModal"
+                                ng-click="$ctrl.edit($ctrl.data)">
+                            <i class="fa fa-edit">Edit</i>
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<modal data="$ctrl.clickedTrip"></modal>

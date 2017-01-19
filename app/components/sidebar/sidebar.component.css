@@ -1,0 +1,48 @@
+.navbar {
+    margin-bottom: 0px;
+}
+
+.sidebar {
+    position: absolute;
+    height: 100%;
+    width: 200px;
+    border-right: 1px solid #e7e7e7;
+    background: #f8f8f8;
+}
+
+.sidebar ul li {
+    list-style: none;
+    line-height: 25px;
+    padding: 10px 0 0 37px;
+}
+
+.sidebar ul li:hover {
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #777777;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #777777;
+}
+
+a:link {
+    text-decoration: none;
+    color: #777777;
+
+}
+
+a:visited {
+    text-decoration: none;
+    color: #777777;
+}
+
+
+
+
+
+

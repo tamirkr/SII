@@ -1,0 +1,13 @@
+<grid></grid>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="jumbotron">
+                <h1>{{$ctrl.userDetails.firstName}} {{$ctrl.userDetails.lastName}}
+                    <span class="badge" ng-show="$ctrl.userDetails.isAdmin">Admin</span>
+                </h1>
+                <p>{{$ctrl.userDetails.email}}</p>
+            </div>
+        </div>
+    </div>
+</div>
